@@ -1,0 +1,20 @@
+# Ultra-short smoke config for CI / local sanity (few batches, tiny net).
+dataset: mnist
+data_root: ./data
+timesteps: 50
+beta_start: 1.0e-4
+beta_end: 2.0e-2
+base_channels: 16
+channel_mults: [1, 2]
+batch_size: 8
+lr: 2.0e-4
+epochs: 1
+num_workers: 0
+seed: 0
+device: cpu
+checkpoint_dir: ./checkpoints
+sample_dir: ./samples
+log_every: 1
+sample_every_epochs: 1
+num_sample_images: 4
+max_train_steps: 3

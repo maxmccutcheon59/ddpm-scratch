@@ -1,0 +1,19 @@
+# CPU-friendly Fashion-MNIST config.
+dataset: fashionmnist
+data_root: ./data
+timesteps: 200
+beta_start: 1.0e-4
+beta_end: 2.0e-2
+base_channels: 32
+channel_mults: [1, 2, 4]
+batch_size: 64
+lr: 2.0e-4
+epochs: 5
+num_workers: 0
+seed: 0
+device: cpu
+checkpoint_dir: ./checkpoints
+sample_dir: ./samples
+log_every: 100
+sample_every_epochs: 1
+num_sample_images: 16

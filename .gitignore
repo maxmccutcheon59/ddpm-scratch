@@ -1,0 +1,45 @@
+# Secrets / env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Data & model artifacts (do not commit checkpoints / downloads)
+data/*
+!data/.gitkeep
+checkpoints/*
+!checkpoints/.gitkeep
+samples/*
+!samples/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# gitleaks
+.gitleaks-report.json

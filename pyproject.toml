@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ddpm-scratch"
+version = "0.1.0"
+description = "From-scratch PyTorch reimplementation of DDPM (Ho et al., NeurIPS 2020)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Max McCutcheon", email = "MaxMcCutcheon1@outlook.com" },
+]
+keywords = ["diffusion", "ddpm", "pytorch", "generative-models", "mnist"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pip-audit>=2.7",
+]
+
+[project.urls]
+Homepage = "https://github.com/maxmccutcheon59/ddpm-scratch"
+Repository = "https://github.com/maxmccutcheon59/ddpm-scratch"
+Issues = "https://github.com/maxmccutcheon59/ddpm-scratch/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ddpm_scratch*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
