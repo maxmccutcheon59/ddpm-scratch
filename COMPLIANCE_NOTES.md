@@ -46,3 +46,10 @@ Users must verify current terms for their jurisdiction and use case. This projec
 ## Authorization
 
 Security scanning in CI targets **this** repository only (owned by maxmccutcheon59).
+
+## CI workflow placement
+
+The OAuth token used to publish this repo has scopes `gist`, `read:org`, `repo` but **not** `workflow`.
+GitHub rejects both `git push` and Contents API writes to `.github/workflows/*` without that scope (HTTP 404).
+The workflow YAML therefore ships at `ci/github-workflows/ci.yml` with enable instructions in `ci/README.md`.
+This is a tooling limitation, not an intentional weakening of CI controls.
