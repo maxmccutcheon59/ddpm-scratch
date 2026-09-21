@@ -65,6 +65,15 @@ COMPLIANCE_NOTES.md
 }
 ```
 
+
+## CI note
+
+The workflow YAML is shipped at [`ci/github-workflows/ci.yml`](ci/github-workflows/ci.yml)
+because the publishing OAuth token lacked the GitHub `workflow` scope (push and
+Contents API both blocked for `.github/workflows/`). Copy it into
+`.github/workflows/ci.yml` once with a token that has `workflow` scope — see
+[`ci/README.md`](ci/README.md).
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
