@@ -4,9 +4,9 @@
 
 Author: **Max McCutcheon** \<MaxMcCutcheon1@outlook.com\>
 
-This is **not** a tutorial clone. The math (linear β schedule, `q(x_t|x_0)`, noise-prediction loss L_simple, ancestral sampler) is implemented directly from the paper equations in a small, readable codebase aimed at CPU-friendly MNIST / Fashion-MNIST experiments.
+The math (linear β schedule, `q(x_t|x_0)`, noise-prediction loss L_simple, ancestral sampler) is implemented directly from the paper equations in a small, readable codebase aimed at CPU-friendly MNIST / Fashion-MNIST experiments.
 
-> **Honesty note:** Results here are **demo-scale** (small U-Net, T≪1000, few CPU epochs on 28×28 grayscale). They are **not** comparable to the paper’s CIFAR-10 / LSUN numbers. See [WRITEUP.md](WRITEUP.md).
+> **Note:** Results here are **demo-scale** (small U-Net, T≪1000, few CPU epochs on 28×28 grayscale). They are **not** comparable to the paper’s CIFAR-10 / LSUN numbers. See [WRITEUP.md](WRITEUP.md).
 
 ## Features
 
