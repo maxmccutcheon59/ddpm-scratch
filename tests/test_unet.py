@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import torch
 
-from ddpm_scratch.unet import SmallUNet, SinusoidalPosEmb
+from ddpm_scratch.unet import SinusoidalPosEmb, SmallUNet
 
 
 def test_sinusoidal_embedding_shape():
