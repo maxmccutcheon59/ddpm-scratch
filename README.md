@@ -1,5 +1,8 @@
 # ddpm-scratch
 
+[![CI](https://github.com/maxmccutcheon59/ddpm-scratch/actions/workflows/ci.yml/badge.svg)](https://github.com/maxmccutcheon59/ddpm-scratch/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 **From-scratch PyTorch reimplementation** of *Denoising Diffusion Probabilistic Models* (Ho et al., NeurIPS 2020).
 
 Author: **Max McCutcheon** \<MaxMcCutcheon1@outlook.com\>
