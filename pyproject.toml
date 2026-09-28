@@ -27,6 +27,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest>=7.0",
+    "ruff>=0.6",
     "pip-audit>=2.7",
 ]
 
@@ -42,3 +43,7 @@ include = ["ddpm_scratch*"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+
+[tool.ruff.lint.per-file-ignores]
+# Scripts add the repo root to sys.path before importing the package.
+"scripts/*.py" = ["E402"]
